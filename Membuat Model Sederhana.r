@@ -1,0 +1,5 @@
+library(readr)
+electric_bill <- read_csv("https://storage.googleapis.com/dqlab-dataset/electric_bill.csv")
+model <- lm(amount_paid ~ num_people + housearea, data = electric_bill)
+
+model
